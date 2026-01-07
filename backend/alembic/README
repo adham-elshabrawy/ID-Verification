@@ -1,0 +1,16 @@
+Generic single-database configuration with an async dbapi.
+
+Alembic will:
+- Detect all changes in your models
+- Create versions for each change you make
+- Apply versions in order, updating or downgrading the database schema
+
+To create a migration:
+    alembic revision --autogenerate -m "message"
+
+To apply migrations:
+    alembic upgrade head
+
+To rollback one migration:
+    alembic downgrade -1
+
